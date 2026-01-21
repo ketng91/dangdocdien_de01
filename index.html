@@ -45,7 +45,7 @@ header {background:#213C51;color:#fff;padding:10px;text-align:center;}
   font-size:20px;
 }
 .questions-box{
-border:1px solid #ccc;padding:10px;height:160px;overflow-y:auto;
+border:1px solid #ccc;padding:10px;height:180px;overflow-y:auto;
   border-radius:6px;background:#ECF4E8;margin-bottom:10px;  font-size:20px;
 }
 
@@ -147,7 +147,7 @@ font-family: "Arial", sans-serif;
 <header>
 <a id="homeBtn" href="https://ketng91.github.io/khoathpt/">🏠</a>
 
-  <h2>Luyện đọc điền THPTQG - Lớp Anh thầy Kết | Đề 01: Tỉnh Phú Thọ </h2>
+  <h2>Luyện đọc điền THPTQG - Lớp Anh thầy Kết | Đề 01: Tỉnh Phú Thọ (Đợt 1) 2026 </h2>
   <div id="timer">00:00</div>
 </header>
 
@@ -187,9 +187,15 @@ font-family: "Arial", sans-serif;
 
 <script>
 // TIMER
-let sec=0;setInterval(()=>{sec++;let m=Math.floor(sec/60),s=sec%60;
-document.getElementById('timer').innerText=
-(m<10?'0'+m:m)+':'+(s<10?'0'+s:s)},1000);
+// TIMER
+let sec = 0;
+let timerInterval = setInterval(() => {
+  sec++;
+  let m = Math.floor(sec / 60),
+      s = sec % 60;
+  document.getElementById('timer').innerText =
+    (m < 10 ? '0' + m : m) + ':' + (s < 10 ? '0' + s : s);
+}, 1000);
 
 // DATA có explain
 const exercises={
@@ -279,7 +285,69 @@ questions:[
     "explain": "Cụm từ 'register for the workshops' có nghĩa là 'đăng ký tham gia các buổi hội thảo'. 'Account for' (giải thích), 'Apply for' (nộp đơn xin việc/học bổng), 'Look for' (tìm kiếm)."
   }
 ]},
+3:{
+passage:`<h4 <b>REGENERATIVE AGRICULTURE AND ECO-SYSTEM RESTORATION</b> </h4>
+The global movement toward regenerative agriculture is a big change in how we take care of our natural environment. This farming method focuses on enhancing soil health and promoting biodiversity. (18) __________. When farmers eliminate their reliance on chemical fertilizers, they can help the soil take in more carbon, which is crucial for mitigating the adverse effects of climate change.
+However, starting these greener farming methods is often hard because of money problems. Small farmers, who have to pay high costs and get very little help from the government, (19) _________ rather than adopting long-term sustainable models. This economic pressure prevents many farmers from making the essential transition to organic methods. (20) _________. If governments don’t give more financial support, the gap between environmental goals and farming reality will continue to widen.
+Furthermore, success in nature restoration depends on a mix of local knowledge, community engagement, and (21) _________. These elements must work together to ensure conservation efforts are effective and fit the local culture. While some regions have witnessed a great recovery of native flora, others still struggle with land quality. (22) _________, particularly when local communities are empowered to manage their own resources through innovative land-use agreements.`,
 
+questions:[
+  {
+    q: "Question 18:",
+    options: [
+      "A. where these practices are considered essential for agricultural results",
+      "B. these methods ensure food output rather than global food security",
+      "C. every method improves food output but is not essential for global security",
+      "D. all of which are considered essential for global food security"
+    ],
+    answer: 3,
+    explain: "Cụm 'all of which' thay thế cho các phương pháp đã nêu ở câu trước (soil health, biodiversity) và bổ sung thông tin rằng chúng thiết yếu cho an ninh lương thực toàn cầu."
+  },
+  {
+    q: "Question 19:",
+    options: [
+      "A. traditional habits are frequently maintained by farmers to maximize profits.",
+      "B. has frequently kept traditional habits despite environmental concerns",
+      "C. frequently maintaining traditional habits to maximize profits for local residents and authority",
+      "D. frequently choose to maintain traditional habits despite negative environmental impact"
+    ],
+    answer: 3,
+    explain: "Lựa chọn D phù hợp về mặt ngữ pháp (chia động từ số nhiều cho 'Small farmers') và logic (nông dân chọn duy trì thói quen truyền thống dù có tác động tiêu cực đến môi trường do áp lực kinh tế)."
+  },
+  {
+    q: "Question 20:",
+    options: [
+      "A. Insufficient funding remains a major barrier to achieving system changes",
+      "B. Adequate funding still serves as a significant barrier to genuine system changes",
+      "C. Minimal funding effectively eliminates every barrier to system changes",
+      "D. Abundant funding provides a temporary barrier for agricultural system changes"
+    ],
+    answer: 0,
+    explain: "Dựa vào câu tiếp theo về việc chính phủ cần hỗ trợ tài chính, câu này khẳng định 'nguồn vốn không đủ' (insufficient funding) là rào cản lớn."
+  },
+  {
+    q: "Question 21:",
+    options: [
+      "A. on account of using modern technology to monitor and check the health of ecosystems carefully",
+      "B. thanks to applying modern technological solutions for environmental monitoring and resource integration",
+      "C. the use of modern technology that can harm traditional farming practices in many ways",
+      "D. the integration of modern technology that can enhance monitoring and resource management"
+    ],
+    answer: 3,
+    explain: "Cấu trúc 'a mix of A, B, and C' yêu cầu một cụm danh từ. 'The integration of modern technology...' (Sự tích hợp công nghệ hiện đại) hoàn thiện danh sách các yếu tố cần thiết cho sự phục hồi thiên nhiên."
+  },
+  {
+    q: "Question 22:",
+    options: [
+      "A. Indeed, promising outcomes emerge in areas where scientific research is combined with indigenous practices",
+      "B. Similarly, negative outcomes always emerge when scientific research ignores indigenous knowledge completely",
+      "C. By contrast, promising outcomes emerge where indigenous practices replace scientific research entirely",
+      "D. Financial obstacles prevent a wide range of positive outcomes despite scientific research and local efforts, for example"
+    ],
+    answer: 0,
+    explain: "Câu này kết luận lại ý của đoạn: Khi kiến thức địa phương (indigenous practices) kết hợp với khoa học, kết quả khả quan (promising outcomes) sẽ xuất hiện."
+  }
+]},
 
 
 
